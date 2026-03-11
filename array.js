@@ -88,8 +88,6 @@ console.log(preciosNuevos)
 const todosPares = numeros.every(num => num % 2 === 0);
 console.log(todosPares);
 
-// El meotod sort() ordena (y normalmente muta)
-
 // El metodo reduce() sirve para reducir un arreglo a un solo valor.
 const numeritos = [1, 2, 3, 4];
 
@@ -113,7 +111,20 @@ const carrito = [
 ];
 
 const total = carrito.reduce((acc, item) => {
-    
+    return acc + item.precio;
 }, 0);
 
 console.log(total);
+
+//Arreglos de objetos 
+const estudiantes = [
+    { nombre: "Ana", edad: 20 },
+    { nombre: "Martin", edad: 22 },
+    { nombre: "Antonella", edad: 21 }
+];
+
+console.log(estudiantes[0].nombre);
+
+//Buscar estudiante de mayor edad 
+const mayor = estudiantes.find(est => est.edad > 21);
+console.log(mayor);
