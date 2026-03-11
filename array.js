@@ -116,6 +116,23 @@ const total = carrito.reduce((acc, item) => {
 
 console.log(total);
 
+// Uso de splice
+let frutilla = ["manzana", "pera", "plátano", "uva"];
+console.log("Arreglo original:");
+console.log(frutilla);
+
+// Usamos splice para eliminar un elemento
+// splice(posicionInicio, cantidadAEliminar)
+
+// En este caso:
+// posición 1 = "pera"
+// eliminar 1 elemento
+frutilla.splice(1, 1);
+
+// Mostramos el arreglo después de usar splice
+console.log("Arreglo después de usar splice:");
+console.log(frutilla);
+
 //Arreglos de objetos 
 const estudiantes = [
     { nombre: "Ana", edad: 20 },
