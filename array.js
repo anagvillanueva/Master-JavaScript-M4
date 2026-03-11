@@ -85,4 +85,35 @@ const preciosNuevos = apellidos.some((p) => p === 'Serrano');
 console.log(preciosNuevos)
 
 // El metodo every() es si todos cumplen 
+const todosPares = numeros.every(num => num % 2 === 0);
+console.log(todosPares);
+
 // El meotod sort() ordena (y normalmente muta)
+
+// El metodo reduce() sirve para reducir un arreglo a un solo valor.
+const numeritos = [1, 2, 3, 4];
+
+const suma = numeritos.reduce((acumulador, actual) => {
+    return acumulador + actual;
+}, 0);
+
+console.log(suma);
+/*
+0 + 1 = 1
+1 + 2 = 3
+3 + 3 = 6
+6 + 4 = 10 
+*/
+
+// EJEMPLO: Suma de un carrito
+const carrito = [
+    { producto: "Laptop", precio: 1000 },
+    { producto: "Mouse", precio: 50 },
+    { producto: "Teclado", precio: 100 }
+];
+
+const total = carrito.reduce((acc, item) => {
+    
+}, 0);
+
+console.log(total);
