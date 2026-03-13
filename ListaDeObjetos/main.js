@@ -1,4 +1,4 @@
-//arreglo de objetos con al menos 5 productos, cada uno con las propiedades nombre, precio y categoría.
+// Arreglo de objetos con al menos 5 productos, cada uno con las propiedades nombre, precio y categoría.
 
 const productos = [
     { nombre: "Abrigo", precio: 1500, categoria: "Ropa" },
