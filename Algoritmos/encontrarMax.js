@@ -28,5 +28,5 @@ function encontrarMaximo(arreglo, inicio = 0, fin = arreglo.length - 1) {
 }
 
 // Prueba
-let numeros = [3, 9, 2, 15, 6, 20, 1];
+let numeros = [3, 9, 202, 15, 6, 20, 1];
 console.log("Máximo:", encontrarMaximo(numeros));
